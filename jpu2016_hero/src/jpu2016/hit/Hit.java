@@ -1,9 +1,10 @@
 package jpu2016.hit;
 
 public class Hit {
-	private final int strength;
-	private final int range;
-	private final TypeHit	typeHit;
+	private  int strength;
+	private  int range;
+	private  TypeHit	typeHit;
+	
 	
 	private  int MAX_STRENGTH=100 ;
 	private int MIN_STRENGTH = 0; 
@@ -12,10 +13,9 @@ public class Hit {
 
 
 	public Hit(final int strength, final int range, final TypeHit typeHit) {
-		this.strength = strength;
-		this.range = range;
-		this.typeHit = typeHit;
-		
+		this.setStrength(strength);
+		this.setRange(range);
+		this.setTypeHit(typeHit);		
 	}//hit
 
 	public int getStrength() throws Exception {
@@ -55,6 +55,28 @@ public class Hit {
 		return MAX_RANGE;		
 
 	}
+	
+	/**
+	 * @param strength the strength to set
+	 */
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+
+	/**
+	 * @param range the range to set
+	 */
+	public void setRange(int range) {
+		this.range = range;
+	}
+
+	/**
+	 * @param typeHit the typeHit to set
+	 */
+	public void setTypeHit(TypeHit typeHit) {
+		this.typeHit = typeHit;
+	}
+
 	
 
 	

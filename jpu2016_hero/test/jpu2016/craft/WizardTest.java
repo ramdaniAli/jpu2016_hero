@@ -38,6 +38,7 @@ public class WizardTest extends CraftTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
+	@Override
 	@Before
 	public void setUp() throws Exception {
 		this.craft=new Wizard (new Human());
@@ -50,7 +51,7 @@ public class WizardTest extends CraftTest {
 	public void tearDown() throws Exception {
 	}
 	
-	
+	@Override
 	@Test
 	public void testGetHit() throws Exception {
 	super.testGetHit();

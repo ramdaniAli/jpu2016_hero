@@ -28,6 +28,16 @@ public class HitTest {
 	@After
 	public void tearDown() throws Exception {
 	}
+	
+	@Test 
+	public final void testSetStrength ()	{
+		
+	}
+	
+	@Test 
+	public final void testSetRange()	{
+		
+	}
 
 	@Test
 	public final void testGetStrength() throws Exception {
@@ -46,6 +56,7 @@ public class HitTest {
 		final TypeHit expected = TypeHit.NORMAL ; 
 		assertEquals(expected, hit.getTypeHit());
 	}
+	
 
 	@Test
 	public final void exceptStrengthMaxStrength()	{
@@ -89,5 +100,7 @@ public class HitTest {
 		}
 		
 	}
+
+	
 
 }

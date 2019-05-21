@@ -22,6 +22,7 @@ public class ArcherTest extends CraftTest {
 	public static void tearDownAfterClass() throws Exception {
 	}
 
+	@Override
 	@Before
 	public void setUp() throws Exception {
 		this.craft=new Archer (new Human());
@@ -32,7 +33,7 @@ public class ArcherTest extends CraftTest {
 	public void tearDown() throws Exception {
 	}
 
-	
+	@Override
 	@Test
 	public void testGetHit() throws Exception {
 	super.testGetHit();
