@@ -11,6 +11,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import jpu2016.hero.Human;
+import jpu2016.hit.Hit;
+import jpu2016.hit.TypeHit;
+
 /**
  * @author liabe
  *
@@ -36,6 +40,7 @@ public class WizardTest extends CraftTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		this.craft=new Wizard (new Human());
 	}
 
 	/**
@@ -45,11 +50,18 @@ public class WizardTest extends CraftTest {
 	public void tearDown() throws Exception {
 	}
 	
+	
 	@Test
-	public final void testCraft() {
-		fail("Not yet implemented"); // TODO
+	public void testGetHit() throws Exception {
+	super.testGetHit();
+	final int ExpectedStrength = 5;
+	final int ExpectedRange = 0;
+	final TypeHit ExpectedTypeHit = TypeHit.NORMAL;
+	final Hit hit = this.craft.getHit();
+	assertEquals(ExpectedStrength, hit.getStrength());
+	assertEquals(ExpectedRange, hit.getRange());
+	assertEquals(ExpectedTypeHit, hit.getTypeHit());
 	}
-
 
 
 }

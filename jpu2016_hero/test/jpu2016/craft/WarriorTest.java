@@ -12,6 +12,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import jpu2016.hero.Human;
+import jpu2016.hit.Hit;
+import jpu2016.hit.TypeHit;
 
 /**
  * @author liabe
@@ -48,13 +50,21 @@ public class WarriorTest extends CraftTest{
 	public void tearDown() throws Exception {
 	}
 
-
-	/**
-	 * Test method for {@link jpu2016.craft.Craft#Craft(jpu2016.hero.IHero)}.
-	 */
+	
 	@Test
-	public final void testCraft() {
-		fail("Not yet implemented"); // TODO
+	public void testGetHit() throws Exception {
+	super.testGetHit();
+	final int ExpectedStrength = 5;
+	final int ExpectedRange = 0;
+	final TypeHit ExpectedTypeHit = TypeHit.NORMAL;
+	final Hit hit = this.craft.getHit();
+	assertEquals(ExpectedStrength, hit.getStrength());
+	assertEquals(ExpectedRange, hit.getRange());
+	assertEquals(ExpectedTypeHit, hit.getTypeHit());
 	}
 
 }
+
+
+
+

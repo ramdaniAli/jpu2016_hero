@@ -50,9 +50,10 @@ public class CraftTest {
 
 	/**
 	 * Test method for {@link jpu2016.craft.Craft#getHit()}.
+	 * @throws Exception 
 	 */
 	@Test
-	public final void testGetHit() {
+	public void testGetHit() throws Exception {
 		
 		
 		assertNotNull(this.craft.getHit());
