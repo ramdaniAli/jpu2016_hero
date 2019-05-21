@@ -36,8 +36,8 @@ public class ArcherTest extends CraftTest {
 	@Test
 	public void testGetHit() throws Exception {
 	super.testGetHit();
-	final int ExpectedStrength = 5;
-	final int ExpectedRange = 0;
+	final int ExpectedStrength = 2;
+	final int ExpectedRange = 8;
 	final TypeHit ExpectedTypeHit = TypeHit.NORMAL;
 	final Hit hit = this.craft.getHit();
 	assertEquals(ExpectedStrength, hit.getStrength());

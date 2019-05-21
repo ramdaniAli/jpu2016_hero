@@ -36,9 +36,9 @@ public class AssassinTest extends CraftTest {
 	@Test
 	public void testGetHit() throws Exception {
 	super.testGetHit();
-	final int ExpectedStrength = 5;
+	final int ExpectedStrength = 2;
 	final int ExpectedRange = 0;
-	final TypeHit ExpectedTypeHit = TypeHit.NORMAL;
+	final TypeHit ExpectedTypeHit = TypeHit.POISON;
 	final Hit hit = this.craft.getHit();
 	assertEquals(ExpectedStrength, hit.getStrength());
 	assertEquals(ExpectedRange, hit.getRange());

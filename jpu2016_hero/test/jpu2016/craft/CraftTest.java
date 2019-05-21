@@ -54,8 +54,6 @@ public class CraftTest {
 	 */
 	@Test
 	public void testGetHit() throws Exception {
-		
-		
 		assertNotNull(this.craft.getHit());
 
  	}

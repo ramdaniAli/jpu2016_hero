@@ -54,9 +54,9 @@ public class WizardTest extends CraftTest {
 	@Test
 	public void testGetHit() throws Exception {
 	super.testGetHit();
-	final int ExpectedStrength = 5;
-	final int ExpectedRange = 0;
-	final TypeHit ExpectedTypeHit = TypeHit.NORMAL;
+	final int ExpectedStrength = 3;
+	final int ExpectedRange = 5;
+	final TypeHit ExpectedTypeHit = TypeHit.MAGIC;
 	final Hit hit = this.craft.getHit();
 	assertEquals(ExpectedStrength, hit.getStrength());
 	assertEquals(ExpectedRange, hit.getRange());

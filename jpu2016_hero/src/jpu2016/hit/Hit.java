@@ -1,8 +1,8 @@
 package jpu2016.hit;
 
 public class Hit {
-	private final int			strength;
-	private final int			range;
+	private final int strength;
+	private final int range;
 	private final TypeHit	typeHit;
 	
 	private  int MAX_STRENGTH=100 ;
@@ -55,6 +55,8 @@ public class Hit {
 		return MAX_RANGE;		
 
 	}
+	
+
 	
 	
 }//hit
