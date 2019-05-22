@@ -11,7 +11,8 @@ public abstract class Hero implements IHero {
 
 	@Override
 	public Hit getHit() {
-		return null;
+		return null ; 
+		
 	}
 
 	public void setCraft(final Craft craft) {

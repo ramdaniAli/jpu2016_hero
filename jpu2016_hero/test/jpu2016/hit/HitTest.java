@@ -71,7 +71,7 @@ public class HitTest {
 	@Test
 	public final void exceptStrengthMinStrength()	{
 		try {
-			new Hit (-1 , 10,TypeHit.NORMAL);
+			new Hit (0 , 0,TypeHit.NORMAL);
 		}catch (final Exception e ) {
 			final String expected  = "Strength out of strength";
 			assertEquals(expected, e.getMessage());
@@ -83,7 +83,7 @@ public class HitTest {
 	@Test
 	public final void exceptRangeMaxRange()	{
 		try {
-			new Hit (1,11,TypeHit.NORMAL);
+			new Hit (101,11,TypeHit.NORMAL);
 		}catch (final Exception e ) {
 			final String expected  = "Range out of range";
 			assertEquals(expected, e.getMessage());
@@ -93,7 +93,7 @@ public class HitTest {
 	@Test
 	public final void exceptRangeMinRange()	{
 		try {
-			new Hit (1,0,TypeHit.NORMAL);
+			new Hit (0,0,TypeHit.NORMAL);
 		}catch (final Exception e ) {
 			final String expected  = "Range out of range";
 			assertEquals(expected, e.getMessage());
